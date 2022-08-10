@@ -8,7 +8,6 @@
 - 性能数据监控：**fp**，**fcp**，DOMready, DNS
 - HTTP请求监控：**请求链路**，**异常监控**，**成功率**，返回信息
 
-`监控sdk`部分我们需要将其包装成`插件形式`来使用
 
 2. #### 监控应用
 
@@ -42,7 +41,7 @@ Google基于此开源了`web-vitals`插件
 
 ## HTTP请求监控
 
-请求链路，成功率，返回信息，参考https://help.aliyun.com/document_detail/91587.html
+成功率，返回信息，参考https://help.aliyun.com/document_detail/91587.html
 #### HTTP异常
 至少需要捕获`具体接口`，`状态码`,`请求参数`。  
 `Promise.catch`得不到这些信息，还是需要劫持`XHR`或`Fetch`。
@@ -50,4 +49,4 @@ Google基于此开源了`web-vitals`插件
 
 ## 发送方式
 将以上监控数据带上时间缓存在`队列`里，分批发送给后端，一个个发送太耗费通信资源。  
-为了不影响页面性能，将发送数据这个动作放在`requestIdleCallback`函数里，这个函数是趁着页面刷新间隙执行的，这段时间浏览器是空闲的。
+为了不影响页面性能，将发送数据这个动作放在`requestIdleCallback`函数里
