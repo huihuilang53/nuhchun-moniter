@@ -10,7 +10,9 @@ https://www.npmjs.com/package/nuhchun-monitor
 ## 功能模块
 
 --example   sdk
+
 --manage    展示监控数据图表的后台系统
+
 --server    后端
 
 1. #### SDK
