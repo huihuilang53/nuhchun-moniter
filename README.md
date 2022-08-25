@@ -1,7 +1,20 @@
-[项目参考](https://github.com/M-cheng-web/web-tracing)  
+
+## 监控系统
+http://td.nuhchun.cn
+## sdk源码地址：
+https://github.com/huihuilang53/nuhchun-moniter/tree/xch1/example/src/core
+## npm打包发布地址：
+https://www.npmjs.com/package/nuhchun-monitor
+
+
 ## 功能模块
 
+--example   sdk
+--manage    展示监控数据图表的后台系统
+--server    后端
+
 1. #### SDK
+源码：nuhchun-moniter/example/src/core/
 
 - 用户行为数据：**pv**，**uv**，自定义行为埋点，页面停留时间，用户热点页面
 - 异常监控：**JS异常**，**HTTP异常**，**资源异常**，**Promise异常**
@@ -16,7 +29,7 @@
 - 后端服务器：保存历史数据
 
 3. #### 被监控应用
-
+源码：nuhchun-moniter/example/src/view/
 - 被监控的前端应用
 - 后端服务器：正常返回的api，发生错误的api，慢返回的api
 

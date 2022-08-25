@@ -1,6 +1,7 @@
-该sdk采用Typescript开发
+该sdk采用`Typescript`#开发
 
 项目仓库地址：
+https://github.com/huihuilang53/nuhchun-moniter
 
 ## 使用方法
 用户可以自定义配置：
